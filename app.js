@@ -74,9 +74,10 @@ const menu = [
 ];
 
 const sectionCenter = document.querySelector('.menu-items');
+const filterBtns = document.querySelectorAll('.filter-btn');
 
-window.addEventListener('DOMContentLoaded', () => {
-    let displayMenu = menu.map((item) => {
+function displayMenuItems(menuItems) {
+    let displayMenu = menuItems.map((item) => {
         return (
             `<div class="item">
                 <img src="${item.img}" alt="${item.title}" />
@@ -92,4 +93,6 @@ window.addEventListener('DOMContentLoaded', () => {
     })
     displayMenu = displayMenu.join('')
     sectionCenter.innerHTML = displayMenu;
-})
+}
+
+window.addEventListener('DOMContentLoaded', displayMenuItems(menu))
