@@ -79,3 +79,24 @@ img {
 .right-desc {
   padding-right: 10px;
 }
+
+.filter-btn {
+  background-color: white;
+  border: 2px solid rgb(218, 165, 32);
+  border-radius: 5px;
+  color: rgb(218, 165, 32);
+  padding: 7px 12px;
+  letter-spacing: 2px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.filter-btn:hover {
+  background-color: rgb(218, 165, 32);
+  color: white;
+}
